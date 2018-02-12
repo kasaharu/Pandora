@@ -60,3 +60,6 @@ workflows:
             - lint
             - test
             - e2e
+          filters:
+            branches:
+              only: release
