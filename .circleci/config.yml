@@ -15,7 +15,7 @@ jobs:
       - checkout
       - run: echo "Start test"
       - run: yarn install
-      - run: yarn test
+      - run: yarn test --single-run
 workflows:
   version: 2
   build_and_test:
