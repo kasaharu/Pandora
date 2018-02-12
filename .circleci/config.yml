@@ -16,3 +16,9 @@ jobs:
       - run: echo "Start test"
       - run: yarn install
       - run: yarn test
+workflows:
+  version: 2
+  build_and_test:
+    jobs:
+      - build
+      - test
