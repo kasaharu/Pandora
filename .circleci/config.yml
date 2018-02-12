@@ -8,3 +8,11 @@ jobs:
       - run: echo "Start build"
       - run: yarn install
       - run: yarn build
+  test:
+    docker:
+      - image: circleci/node:8.9-stretch
+    steps:
+      - checkout
+      - run: echo "Start test"
+      - run: yarn install
+      - run: yarn test
