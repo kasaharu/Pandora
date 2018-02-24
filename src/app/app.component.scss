@@ -1,3 +1,5 @@
+@import '../assets/styles/mixin';
+
 .header {
   display: flex;
   width: 100%;
@@ -9,7 +11,7 @@
     font-size: 1.5rem;
     color: white;
     padding-left: 16px;
-    @media only screen and (max-width: 480px) {
+    @include sp-display() {
       font-size: 1.2rem;
     }
   }
