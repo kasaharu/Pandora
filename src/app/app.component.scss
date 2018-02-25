@@ -1,0 +1,18 @@
+@import 'mixin';
+
+.header {
+  display: flex;
+  width: 100%;
+  height: 3.5rem;
+  background-color: black;
+  align-items: center;
+
+  .logo {
+    font-size: 1.5rem;
+    color: white;
+    padding-left: 16px;
+    @include sp-display() {
+      font-size: 1.2rem;
+    }
+  }
+}
