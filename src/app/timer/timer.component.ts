@@ -8,11 +8,18 @@ import { TimerService } from '../timer.service';
 })
 export class TimerComponent implements OnInit {
   count = 0;
+  // TODO: subscribe() 結果の適切な返り値がわかったら any をやめる
+  timer: any;
 
   constructor(private timerService: TimerService) { }
 
   ngOnInit() {
-    this.timerService.countSecond().subscribe(value => this.count++);
+    this.timer = this.timerService.countSecond().subscribe(value => this.count++);
   }
 
+  ngDoCheck() {
+    if (this.count === 10) {
+      this.timer.unsubscribe();
+    }
+  }
 }
