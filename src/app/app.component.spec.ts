@@ -1,6 +1,7 @@
 import { TestBed, async } from '@angular/core/testing';
 import { AppComponent } from './app.component';
 import { TimerComponent } from './timer/timer.component';
+import { TimerService } from './timer.service';
 describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
@@ -8,6 +9,7 @@ describe('AppComponent', () => {
         AppComponent,
         TimerComponent
       ],
+      providers: [TimerService],
     }).compileComponents();
   }));
   it('should create the app', async(() => {
