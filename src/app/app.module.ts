@@ -6,13 +6,15 @@ import { TimerComponent } from './timer/timer.component';
 
 import { TimerService } from './timer.service';
 import { TaskBoardComponent } from './task-board/task-board.component';
+import { NewTaskComponent } from './new-task/new-task.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     TimerComponent,
-    TaskBoardComponent
+    TaskBoardComponent,
+    NewTaskComponent
   ],
   imports: [
     BrowserModule
