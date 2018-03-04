@@ -3,6 +3,7 @@ import { of } from 'rxjs/observable/of';
 import { AppComponent } from './app.component';
 import { TimerComponent } from './timer/timer.component';
 import { TaskBoardComponent } from './task-board/task-board.component';
+import { NewTaskComponent } from './new-task/new-task.component';
 import { TimerService } from './timer.service';
 describe('AppComponent', () => {
   beforeEach(async(() => {
@@ -10,7 +11,8 @@ describe('AppComponent', () => {
       declarations: [
         AppComponent,
         TimerComponent,
-        TaskBoardComponent
+        TaskBoardComponent,
+        NewTaskComponent
       ],
       providers: [ { provide: TimerService, useValue: { countSecond: () => {} } } ],
     }).compileComponents();

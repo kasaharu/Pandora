@@ -1,6 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { TaskBoardComponent } from './task-board.component';
+import { NewTaskComponent } from '../new-task/new-task.component';
 
 describe('TaskBoardComponent', () => {
   let component: TaskBoardComponent;
@@ -8,7 +9,7 @@ describe('TaskBoardComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ TaskBoardComponent ]
+      declarations: [ TaskBoardComponent, NewTaskComponent ]
     })
     .compileComponents();
   }));
