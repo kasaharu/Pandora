@@ -2,13 +2,17 @@ import { TestBed, async } from '@angular/core/testing';
 import { of } from 'rxjs/observable/of';
 import { AppComponent } from './app.component';
 import { TimerComponent } from './timer/timer.component';
+import { TaskBoardComponent } from './task-board/task-board.component';
+import { NewTaskComponent } from './new-task/new-task.component';
 import { TimerService } from './timer.service';
 describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [
         AppComponent,
-        TimerComponent
+        TimerComponent,
+        TaskBoardComponent,
+        NewTaskComponent
       ],
       providers: [ { provide: TimerService, useValue: { countSecond: () => {} } } ],
     }).compileComponents();
