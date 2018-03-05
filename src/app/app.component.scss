@@ -22,11 +22,28 @@ $sidemenu: 20rem;
   padding: 1rem;
   display: flex;
 
-  .task-board-wrapper {
-    width: $sidemenu;
+  @include pc-display {
+    .task-board-wrapper {
+      width: $sidemenu;
+    }
+
+    .app-timer-wrapper {
+      width: calc(100% - #{$sidemenu});
+    }
   }
 
-  .app-timer-wrapper {
-    width: calc(100% - #{$sidemenu});
+  @include sp-display {
+    position: relative;
+
+    .task-board-wrapper {
+      position: absolute;
+      bottom: 0;
+    }
+
+    .app-timer-wrapper {
+      height: 100px;
+      width: 100%;
+      top: 0;
+    }
   }
 }
