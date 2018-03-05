@@ -1,3 +1,7 @@
+@mixin pc-display() {
+  @media only screen and (min-width: 768px) { @content; }
+}
+
 @mixin sp-display() {
   @media only screen and (max-width: 480px) { @content; }
 }
