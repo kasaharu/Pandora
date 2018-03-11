@@ -9,6 +9,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
+    "tslint-check": "tslint-config-prettier-check ./tslint.json",
     "deploy": "firebase deploy --token=$FIREBASE_DEPLOY_TOKEN"
   },
   "private": true,
