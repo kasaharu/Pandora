@@ -4,6 +4,7 @@ import { AppComponent } from './app.component';
 import { TimerComponent } from './timer/timer.component';
 import { TaskBoardComponent } from './task-board/task-board.component';
 import { NewTaskComponent } from './new-task/new-task.component';
+import { TaskListComponent } from './task-list/task-list.component';
 import { TimerService } from './timer.service';
 describe('AppComponent', () => {
   beforeEach(async(() => {
@@ -12,7 +13,8 @@ describe('AppComponent', () => {
         AppComponent,
         TimerComponent,
         TaskBoardComponent,
-        NewTaskComponent
+        NewTaskComponent,
+        TaskListComponent
       ],
       providers: [ { provide: TimerService, useValue: { countSecond: () => {} } } ],
     }).compileComponents();
