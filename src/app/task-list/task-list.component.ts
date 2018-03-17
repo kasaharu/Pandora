@@ -6,6 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./task-list.component.scss']
 })
 export class TaskListComponent implements OnInit {
+  taskList = [
+    'DummyTask-1',
+    'DummyTask-2',
+    'DummyTask-3',
+  ];
 
   constructor() { }
 
