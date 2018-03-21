@@ -3,5 +3,13 @@
     height: 3rem;
     display: flex;
     align-items: center;
+    margin: 0.5rem;
+    border: solid 1px;
+    border-radius: 0.5rem;
+    background-color: white;
+  }
+
+  .content-title {
+    padding: 0.5rem;
   }
 }
