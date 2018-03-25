@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { MatButtonModule } from '@angular/material/button';
 
 import { AppComponent } from './app.component';
 import { TimerComponent } from './timer/timer.component';
@@ -19,7 +20,8 @@ import { TaskListComponent } from './task-list/task-list.component';
     TaskListComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    MatButtonModule
   ],
   providers: [TimerService],
   bootstrap: [AppComponent]
